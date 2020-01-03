@@ -12,6 +12,9 @@ class ViewController: UIViewController {
 //    swift 4
 //    let diceArray = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
+//    swift 5
+    let diceArray = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")]
+    
     var randomDice1: Int = 0
     var randomDice2: Int = 0
     
@@ -37,8 +40,8 @@ class ViewController: UIViewController {
 //        diceImageView2.image = UIImage(named: diceArray[randomDice2])
         
 //        swift 5
-        diceImageView1.image = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")][randomDice1]
-        diceImageView2.image = [#imageLiteral(resourceName: "dice1"), #imageLiteral(resourceName: "dice2"), #imageLiteral(resourceName: "dice3"), #imageLiteral(resourceName: "dice4"), #imageLiteral(resourceName: "dice5"), #imageLiteral(resourceName: "dice6")][randomDice2]
+        diceImageView1.image = diceArray[randomDice1]
+        diceImageView2.image = diceArray[randomDice2]
     }
     
     override func motionEnded(_ motion: UIEvent.EventSubtype, with event: UIEvent?) {
